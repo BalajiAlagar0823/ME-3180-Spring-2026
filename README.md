@@ -7,5 +7,7 @@ Distance from strut edge to cg of fan is 100mm, I assumed it was 100mm from neut
 I did not calculate the torsion in the strut, but it should work. If it doesn't pass, just increaase the thickness of the strut channel.
 
 My assumptions on global loading and localized loading are as follows:
-Upper and Lower Pins are modeled as simply supports with the strut as a beam in bending being loaded by weight and thrust forces.
-Middle Pins are modeled as localized loading with belt tension forces and weight of fan assembly loading upon them.
+* Upper and Lower Pins are modeled as simply supports with the strut as a beam in bending being loaded by weight and thrust forces.
+* Middle Pins are modeled as localized loading with belt tension forces and weight of fan assembly loading upon them.
+
+## Requirement 10 is the most important requirement in this problem, it will make your static analysis determinate. Without it, the strut is statically indeterminate.
